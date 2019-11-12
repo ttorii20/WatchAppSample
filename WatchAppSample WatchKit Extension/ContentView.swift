@@ -9,8 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var vm = ContentViewModel()
     var body: some View {
-        Text("Hello, World!")
+     
+            VStack {
+                Button(action: {
+                 
+                    self.vm.inc()
+                }) {
+                    Text("add")
+                }
+                
+                Button(action: {
+                     self.vm.getNews()
+                }) {
+                    Text("get")
+                }
+                
+                List ( vm.list ){ item in
+                    Text(item.title)
+                }
+            }
     }
 }
 

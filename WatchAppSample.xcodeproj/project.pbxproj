@@ -26,6 +26,9 @@
 		716C725723796FD0006DBB5D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C725623796FD0006DBB5D /* NotificationView.swift */; };
 		716C725923796FD1006DBB5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716C725823796FD1006DBB5D /* Assets.xcassets */; };
 		716C725C23796FD1006DBB5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716C725B23796FD1006DBB5D /* Preview Assets.xcassets */; };
+		716C731F2379749B006DBB5D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C731E2379749B006DBB5D /* ContentViewModel.swift */; };
+		716C73222379752B006DBB5D /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C73212379752B006DBB5D /* SampleModel.swift */; };
+		716C73242379755C006DBB5D /* SampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716C73232379755C006DBB5D /* SampleRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		716C725B23796FD1006DBB5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		716C725D23796FD1006DBB5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716C725E23796FD1006DBB5D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		716C731E2379749B006DBB5D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		716C73212379752B006DBB5D /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		716C73232379755C006DBB5D /* SampleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,7 @@
 		716C720723796FCB006DBB5D = {
 			isa = PBXGroup;
 			children = (
+				716C732023797503006DBB5D /* Common */,
 				716C721223796FCB006DBB5D /* WatchAppSample */,
 				716C722923796FCF006DBB5D /* WatchAppSampleTests */,
 				716C723423796FCF006DBB5D /* WatchAppSampleUITests */,
@@ -225,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				716C724E23796FD0006DBB5D /* ContentView.swift */,
+				716C731E2379749B006DBB5D /* ContentViewModel.swift */,
 				716C725023796FD0006DBB5D /* HostingController.swift */,
 				716C725223796FD0006DBB5D /* ExtensionDelegate.swift */,
 				716C725423796FD0006DBB5D /* NotificationController.swift */,
@@ -243,6 +251,15 @@
 				716C725B23796FD1006DBB5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		716C732023797503006DBB5D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				716C73212379752B006DBB5D /* SampleModel.swift */,
+				716C73232379755C006DBB5D /* SampleRepository.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,8 +483,11 @@
 			files = (
 				716C725123796FD0006DBB5D /* HostingController.swift in Sources */,
 				716C724F23796FD0006DBB5D /* ContentView.swift in Sources */,
+				716C731F2379749B006DBB5D /* ContentViewModel.swift in Sources */,
+				716C73242379755C006DBB5D /* SampleRepository.swift in Sources */,
 				716C725523796FD0006DBB5D /* NotificationController.swift in Sources */,
 				716C725323796FD0006DBB5D /* ExtensionDelegate.swift in Sources */,
+				716C73222379752B006DBB5D /* SampleModel.swift in Sources */,
 				716C725723796FD0006DBB5D /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
