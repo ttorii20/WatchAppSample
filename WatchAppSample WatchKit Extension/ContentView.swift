@@ -12,25 +12,33 @@ struct ContentView: View {
     
     @ObservedObject var vm = ContentViewModel()
     var body: some View {
-     
+        ZStack {
+            
+            if vm.isLoading {
+                Text("Loading.....")
+            }
             VStack {
+                
                 Button(action: {
-                 
+                    
                     self.vm.inc()
                 }) {
                     Text("add")
                 }
                 
                 Button(action: {
-                     self.vm.getNews()
+                    self.vm.getNews()
                 }) {
                     Text("get")
                 }
+                
+                Text(vm.result)
                 
                 List ( vm.list ){ item in
                     Text(item.title)
                 }
             }
+        }
     }
 }
 

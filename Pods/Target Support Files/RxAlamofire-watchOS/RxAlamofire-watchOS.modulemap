@@ -1,0 +1,6 @@
+framework module RxAlamofire {
+  umbrella header "RxAlamofire-watchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
